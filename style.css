@@ -1,0 +1,253 @@
+/* @import url(https://fonts.googleapis.com/css2?familily=popins:wg); */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'popins',sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to left,#07c5ff 0%, #ee00ff 100%);
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+
+}
+.mainWrapper{
+    margin: 120px auto;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 25px;
+    
+}
+.wrapper{
+  
+    max-width: 400px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius:0 0 20px 20px;
+    padding: 25px;
+    
+}
+.headingWrapper{
+  
+    max-width: 400px;
+    width: 100%;
+    padding: 10px 25px 10px  25px;
+    background-color: #00000018;
+    transition: all 0.3s ease;
+    
+}
+ 
+.headingWrapper:hover{
+  
+    max-width: 400px;
+    width: 100%;
+    padding: 10px 25px 10px  25px;
+    background-color: #0000009a;
+    
+    
+}
+.upperWrapper{
+    margin:  0;
+    max-width: 400px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 20px 20px 0 0;
+    padding: 25px;
+    
+}
+.headingWrapper header{
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    font: bold;
+}
+@media only screen and (max-width: 900px)
+{
+.mainWrapper{
+    margin: 10px auto;
+    width: 100%;
+    border-radius: 20px;
+    padding: 25px;    
+}
+.wrapper{
+    width: 100%;
+    background-color: #ffffff;
+    border-radius:0 0 20px 20px;
+    padding: 25px;
+}
+.upperWrapper{
+    margin:  0;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 20px 20px 0 0;
+    padding: 25px;
+}
+.headingWrapper header{
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    font: bold;
+}
+}
+.wrapper .inputField{
+    display: flex;
+    height: 40px;
+    width: 100%;
+    margin: 2px 0;
+    margin-bottom: 10px;
+}
+.inputField input{
+  outline: none;
+    width: 85%;
+    height: 100%;
+    border: 1px solid #ccc;
+    font-size: 17px;
+    border-radius: 3px;
+    padding-left: 15px;
+
+
+}
+.inputField button{
+    width: 50px;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: #b500c2;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 5px;
+    opacity: 0.4;
+    pointer-events: none;
+}
+.inputField button.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+.inputField button svg{
+    width: 25px;
+    height: 100%;
+    fill: #fff;
+}
+
+.wrapper .todolist{
+    max-height: 250px;
+    overflow-y: auto;
+
+}
+.todolist li{
+    list-style: none;
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    background: #f2f2f2;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    padding: 0 15px;
+    cursor: default;
+    overflow: hidden;
+}
+
+.todolist li span{
+    position: absolute;
+    right: -45px;
+    background: red;
+    width: 45px;
+    text-align: center;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.3s ease;
+   
+}
+.todolist li:hover span{
+    right: 0px;
+}
+.todolist li:hover span svg{
+    width: 18px;
+    margin-top: 13px;
+}
+.todolist li span svg{
+    width: 0px;
+    fill: #fff;
+    transition: all .9s ease;
+   
+}
+.wrapper .footer{
+    display: flex;
+    width: 100%;
+    margin-top: 25px;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer button{
+
+    border: none;
+    outline: none;
+    background:#b500c2;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 5px;
+    padding: 6px 10px;
+opacity: 0.4;
+pointer-events: none;
+}
+.footer button.active{
+opacity: 1;
+pointer-events: auto;
+}
+.wrapper h6{
+   visibility: hidden;
+  
+}
+.wrapper h6.active{
+    margin-top: -25px;
+   margin-bottom: 25px;
+   padding-left: 10px;
+   color: red;
+    visibility: visible;
+}
+
+.footer button{
+
+    border: none;
+    outline: none;
+    background:#b500c2;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 5px;
+    padding: 6px 10px;
+opacity: 0.4;
+pointer-events: none;
+}
+.footer button.active{
+opacity: 1;
+pointer-events: auto;
+}
+.wrapper h6{
+   visibility: hidden;
+  
+}
+.wrapper h6.active{
+    margin-top: -25px;
+   margin-bottom: 25px;
+   padding-left: 10px;
+   color: red;
+    visibility: visible;
+}
+
+
+
+
+
+
+
+
